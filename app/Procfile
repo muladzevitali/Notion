@@ -1,0 +1,2 @@
+web: gunicorn config.wsgi:application
+worker: celery -A config worker -B -S django -l info --autoscale=5,1 -O fair --time-limit=3600

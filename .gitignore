@@ -1,0 +1,15 @@
+static/
+**.idea/
+__pycache__/
+
+celerybeat-schedule
+
+
+*.pyc
+venv/
+*.rdb
+django.bak
+django.dir
+django.dat
+app/.gitio
+app/.env
