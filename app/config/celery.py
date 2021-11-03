@@ -13,4 +13,5 @@ app.autodiscover_tasks()
 def setup_periodic_tasks(sender, **kwargs):
     from apps.posts.tasks import reset_post_up_votes
 
-    sender.add_periodic_task(crontab(hour=0, minute=0), reset_post_up_votes.s())
+    sender.add_periodic_task(crontab(hour=0, minute=0),
+                             reset_post_up_votes.s())
